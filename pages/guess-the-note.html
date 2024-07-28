@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerte a Nota</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="order-of-notes.html">Ordem das Notas</a></li>
+            <li><a href="guess-the-note.html">Acerte a Nota</a></li>
+            <li><a href="scales-exercise.html">Exercício de Escalas</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Acerte a Nota</h1>
+        <div class="challenge">
+            <p id="currentNote"></p>
+            <div id="noteOptions" class="note-options">
+                <button class="note-option" data-note="C">C</button>
+                <button class="note-option" data-note="D">D</button>
+                <button class="note-option" data-note="E">E</button>
+                <button class="note-option" data-note="F">F</button>
+                <button class="note-option" data-note="G">G</button>
+                <button class="note-option" data-note="A">A</button>
+                <button class="note-option" data-note="B">B</button>
+            </div>
+            <div id="challengeResult" class="result"></div>
+            <button id="resetChallengeButton">Resetar Desafio</button>
+            <p id="challengeResult"></p>
+        </div>
+    </div>
+    <script src="../js/guessNote.js"></script>
+</body>
+</html>

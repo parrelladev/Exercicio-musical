@@ -1,0 +1,177 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#home {
+    background-color: #f0f0f0;
+}
+
+#noteOrder, #guessNote, #scaleExercise {
+    background-color: #fff;
+}
+
+/* Note Option Styles */
+.notes, .centered-message {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.note-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.note-option {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    position: relative;
+}
+
+.note-option.selected {
+    background-color: #FFA500;
+}
+
+.note-option .counter {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.8em;
+    color: gray;
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Button Styles */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.button {
+    width: 400px; /* Defina a largura desejada */
+    height: 100px; /* Defina a altura desejada */
+    margin: 20px auto;
+    padding: 0; /* Remova o padding para evitar que ele afete o tamanho */
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white !important;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center; /* Centraliza o texto */
+    line-height: 100px; /* Alinha verticalmente o texto */
+}
+
+.button a {
+    color: white; /* Defina a cor desejada para o link */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.button:hover {
+    color: white; /* Cor do link ao passar o mouse */
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .note-option {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .note-option {
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
